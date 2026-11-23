@@ -1,0 +1,25 @@
+.player {
+  display: grid;
+  gap: 18px;
+  min-width: 0;
+}
+
+.insights {
+  margin: 0;
+  padding: 14px 18px 14px 34px;
+  border-left: 3px solid var(--gold);
+  background: var(--gold-wash);
+  border-radius: 0 var(--r-md) var(--r-md) 0;
+  font-family: var(--font-read);
+  font-size: 1.05rem;
+  display: grid;
+  gap: 4px;
+  animation: rise 0.4s var(--ease-out);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}

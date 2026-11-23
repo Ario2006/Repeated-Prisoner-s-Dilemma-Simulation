@@ -1,0 +1,195 @@
+.wrap {
+  display: grid;
+  gap: 24px;
+  min-width: 0;
+}
+
+.empty {
+  color: var(--ink-2);
+  padding: 24px 0;
+}
+
+.boardHead,
+.boardFoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-size: var(--t-xs);
+  color: var(--ink-2);
+  padding: 0 4px 6px;
+}
+
+.boardFoot {
+  padding-top: 6px;
+}
+
+.rows {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: grid;
+  grid-template-columns: 22px 36px minmax(96px, 1.1fr) minmax(60px, 2fr) 44px 64px;
+  align-items: center;
+  gap: 10px;
+  padding: 0 6px;
+  border-radius: 10px;
+  transition: transform 0.55s var(--ease-out), background 0.3s;
+}
+
+.focus {
+  background: var(--gold-wash);
+}
+
+.rank {
+  font-weight: 800;
+  color: var(--ink-3);
+  text-align: right;
+}
+
+.name {
+  font-weight: 600;
+  font-size: var(--t-sm);
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nasty {
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--alert);
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 0 5px;
+}
+
+.barTrack {
+  height: 12px;
+  background: rgba(24, 32, 46, 0.06);
+  border-radius: 0 4px 4px 0;
+  overflow: hidden;
+}
+
+.bar {
+  display: block;
+  height: 100%;
+  border-radius: 0 4px 4px 0;
+  transition: width 0.45s var(--ease-out);
+}
+
+.value {
+  font-weight: 800;
+  text-align: right;
+}
+
+.record {
+  font-size: var(--t-xs);
+  color: var(--ink-2);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.trophy {
+  position: absolute;
+  left: 28px;
+  top: -6px;
+  font-size: 16px;
+  animation: drop 0.6s var(--ease-pop);
+}
+
+@keyframes drop {
+  from {
+    transform: translateY(-30px) rotate(-30deg);
+    opacity: 0;
+  }
+}
+
+/* heat map */
+.heat {
+  min-width: 0;
+  overflow-x: auto;
+}
+
+.heatHead {
+  font-size: var(--t-xs);
+  color: var(--ink-2);
+  margin-bottom: 6px;
+}
+
+.heatGrid {
+  display: grid;
+  gap: 2px;
+  min-width: max-content;
+}
+
+.heatRow {
+  display: contents;
+}
+
+.heatCol {
+  display: grid;
+  place-items: center;
+  padding-bottom: 2px;
+}
+
+.heatRowHead {
+  font-size: var(--t-xs);
+  font-weight: 600;
+  padding-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  white-space: nowrap;
+}
+
+.heatCell {
+  height: 30px;
+  min-width: 30px;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 4px;
+  background: rgba(24, 32, 46, 0.05);
+  transition: background 0.3s, color 0.3s;
+  cursor: default;
+}
+
+.ramp {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--t-xs);
+  color: var(--ink-2);
+  margin-top: 8px;
+}
+
+.rampBar {
+  width: 120px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+@media (max-width: 560px) {
+  .row {
+    grid-template-columns: 18px 30px minmax(80px, 1fr) minmax(40px, 1fr) 38px;
+    gap: 6px;
+  }
+  .record {
+    display: none;
+  }
+}

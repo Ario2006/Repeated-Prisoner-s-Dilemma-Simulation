@@ -1,0 +1,175 @@
+.wrap {
+  margin: 0 auto;
+  width: max-content;
+  max-width: 100%;
+  --cell: clamp(84px, 11vw, 132px);
+}
+
+.compact {
+  --cell: 62px;
+  font-size: var(--t-xs);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto var(--cell) var(--cell);
+  gap: 6px;
+  align-items: stretch;
+}
+
+.row {
+  display: contents;
+}
+
+.corner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4px;
+  font-size: var(--t-xs);
+  color: var(--ink-2);
+  padding-right: 6px;
+}
+
+.corner .who:first-child {
+  align-self: flex-end;
+}
+
+.who {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.who i,
+.pa i,
+.pb i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 0 1.2px var(--ink);
+}
+
+.colHead,
+.rowHead {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--t-sm);
+  color: var(--ink-2);
+  transition: opacity 0.3s;
+}
+
+.colHead {
+  justify-content: center;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 2px;
+}
+
+.rowHead {
+  justify-content: flex-end;
+  padding-right: 6px;
+}
+
+.compact .colHead,
+.compact .rowHead {
+  font-size: var(--t-xs);
+}
+
+.cell {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: var(--r-md);
+  border: 1.5px solid var(--rule-strong);
+  background: var(--sheet);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 10px 12px;
+  transition: opacity 0.3s, background 0.25s, border-color 0.25s, transform 0.25s var(--ease-pop), box-shadow 0.25s;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+}
+
+.compact .cell {
+  padding: 5px 7px;
+  border-radius: var(--r-sm);
+}
+
+.pa,
+.pb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.pa {
+  font-size: 2rem;
+  align-self: start;
+}
+
+.pb {
+  font-size: 1.1rem;
+  justify-self: end;
+  align-self: end;
+  color: var(--ink-2);
+}
+
+.compact .pa {
+  font-size: 1.15rem;
+  gap: 4px;
+}
+
+.compact .pb {
+  font-size: 0.8rem;
+  gap: 4px;
+}
+
+.active {
+  background: var(--gold-wash);
+  border-color: var(--gold-deep);
+  box-shadow: 0 0 0 3px var(--gold);
+  transform: scale(1.04);
+}
+
+.faded {
+  opacity: 0.28;
+}
+
+.best {
+  border-color: var(--ink);
+  box-shadow: 0 0 0 3px var(--gold);
+  background: var(--gold-wash);
+}
+
+.compare {
+  border-color: var(--ink);
+  border-style: dashed;
+}
+
+.ghost {
+  border-color: var(--ink-2);
+  border-style: dashed;
+  background: transparent;
+}
+
+.pickable {
+  cursor: pointer;
+}
+
+.pickable:hover {
+  border-color: var(--ink);
+}
+
+.caption {
+  margin-top: 14px;
+  max-width: 34em;
+  font-size: var(--t-sm);
+  color: var(--ink-2);
+}

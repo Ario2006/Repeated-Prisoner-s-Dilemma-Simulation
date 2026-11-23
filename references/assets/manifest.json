@@ -1,0 +1,298 @@
+[
+  {
+    "file": "characters/tit-for-tat.svg",
+    "category": "character",
+    "id": "tit-for-tat",
+    "name": "TIT FOR TAT",
+    "size": "300x500",
+    "note": "Strategy character; .transparent.svg has no background/label"
+  },
+  {
+    "file": "characters/always-defect.svg",
+    "category": "character",
+    "id": "always-defect",
+    "name": "ALWAYS DEFECT",
+    "size": "300x500",
+    "note": "Strategy character; .transparent.svg has no background/label"
+  },
+  {
+    "file": "characters/always-cooperate.svg",
+    "category": "character",
+    "id": "always-cooperate",
+    "name": "ALWAYS COOPERATE",
+    "size": "300x500",
+    "note": "Strategy character; .transparent.svg has no background/label"
+  },
+  {
+    "file": "characters/friedman.svg",
+    "category": "character",
+    "id": "friedman",
+    "name": "FRIEDMAN",
+    "size": "300x500",
+    "note": "Strategy character; .transparent.svg has no background/label"
+  },
+  {
+    "file": "characters/joss.svg",
+    "category": "character",
+    "id": "joss",
+    "name": "JOSS",
+    "size": "300x500",
+    "note": "Strategy character; .transparent.svg has no background/label"
+  },
+  {
+    "file": "characters/tit-for-two-tats.svg",
+    "category": "character",
+    "id": "tit-for-two-tats",
+    "name": "TIT FOR TWO TATS",
+    "size": "300x500",
+    "note": "Strategy character; .transparent.svg has no background/label"
+  },
+  {
+    "file": "characters/generous-tit-for-tat.svg",
+    "category": "character",
+    "id": "generous-tit-for-tat",
+    "name": "GENEROUS TFT",
+    "size": "300x500",
+    "note": "Strategy character; .transparent.svg has no background/label"
+  },
+  {
+    "file": "characters/random.svg",
+    "category": "character",
+    "id": "random",
+    "name": "RANDOM",
+    "size": "300x500",
+    "note": "Strategy character; .transparent.svg has no background/label"
+  },
+  {
+    "file": "characters/banker.svg",
+    "category": "character",
+    "id": "banker",
+    "name": "THE BANKER",
+    "size": "300x500",
+    "note": "NPC (not a strategy)"
+  },
+  {
+    "file": "ui/coin.svg",
+    "category": "ui",
+    "id": "coin",
+    "size": "64x64",
+    "note": "Single gold coin (64x64). Use for payoff animations, flying to scoreboards."
+  },
+  {
+    "file": "ui/coin-stack.svg",
+    "category": "ui",
+    "id": "coin-stack",
+    "size": "80x100",
+    "note": "Stack of coins. Use next to a character score."
+  },
+  {
+    "file": "ui/chest-closed.svg",
+    "category": "ui",
+    "id": "chest-closed",
+    "size": "160x120",
+    "note": "Banker's treasure chest, closed."
+  },
+  {
+    "file": "ui/chest-open.svg",
+    "category": "ui",
+    "id": "chest-open",
+    "size": "160x130",
+    "note": "Banker's chest open and full (payout moment)."
+  },
+  {
+    "file": "ui/card-cooperate.svg",
+    "category": "ui",
+    "id": "card-cooperate",
+    "size": "160x220",
+    "note": "Move card: cooperate (blue, heart)."
+  },
+  {
+    "file": "ui/card-defect.svg",
+    "category": "ui",
+    "id": "card-defect",
+    "size": "160x220",
+    "note": "Move card: defect (red, lightning)."
+  },
+  {
+    "file": "ui/icon-cooperate.svg",
+    "category": "ui",
+    "id": "icon-cooperate",
+    "size": "64x64",
+    "note": "Small cooperate icon for history strips and bubbles."
+  },
+  {
+    "file": "ui/icon-defect.svg",
+    "category": "ui",
+    "id": "icon-defect",
+    "size": "64x64",
+    "note": "Small defect icon for history strips and bubbles."
+  },
+  {
+    "file": "ui/payoff-matrix.svg",
+    "category": "ui",
+    "id": "payoff-matrix",
+    "size": "430x340",
+    "note": "Static payoff matrix. Bottom-left of each cell = YOUR coins, top-right = OPPONENT. Reference only: render the live one in code from the PAYOFFS constant."
+  },
+  {
+    "file": "ui/btn-play.svg",
+    "category": "ui",
+    "id": "btn-play",
+    "size": "56x56",
+    "note": "Play button."
+  },
+  {
+    "file": "ui/btn-pause.svg",
+    "category": "ui",
+    "id": "btn-pause",
+    "size": "56x56",
+    "note": "Pause button."
+  },
+  {
+    "file": "ui/btn-step.svg",
+    "category": "ui",
+    "id": "btn-step",
+    "size": "56x56",
+    "note": "Step one round."
+  },
+  {
+    "file": "ui/btn-fast.svg",
+    "category": "ui",
+    "id": "btn-fast",
+    "size": "56x56",
+    "note": "Fast-forward / speed up."
+  },
+  {
+    "file": "ui/btn-reset.svg",
+    "category": "ui",
+    "id": "btn-reset",
+    "size": "56x56",
+    "note": "Reset simulation."
+  },
+  {
+    "file": "ui/btn-settings.svg",
+    "category": "ui",
+    "id": "btn-settings",
+    "size": "56x56",
+    "note": "Settings gear."
+  },
+  {
+    "file": "ui/btn-info.svg",
+    "category": "ui",
+    "id": "btn-info",
+    "size": "56x56",
+    "note": "Info / help."
+  },
+  {
+    "file": "ui/toggle-off.svg",
+    "category": "ui",
+    "id": "toggle-off",
+    "size": "80x40",
+    "note": "Toggle OFF."
+  },
+  {
+    "file": "ui/toggle-on.svg",
+    "category": "ui",
+    "id": "toggle-on",
+    "size": "80x40",
+    "note": "Toggle ON."
+  },
+  {
+    "file": "ui/bubble-empty.svg",
+    "category": "ui",
+    "id": "bubble-empty",
+    "size": "220x130",
+    "note": "Empty speech bubble (220x130). Overlay text/icon in code."
+  },
+  {
+    "file": "ui/bubble-cooperate.svg",
+    "category": "ui",
+    "id": "bubble-cooperate",
+    "size": "220x130",
+    "note": "Bubble shown when a character cooperates."
+  },
+  {
+    "file": "ui/bubble-defect.svg",
+    "category": "ui",
+    "id": "bubble-defect",
+    "size": "220x130",
+    "note": "Bubble shown when a character defects."
+  },
+  {
+    "file": "ui/icon-noise.svg",
+    "category": "ui",
+    "id": "icon-noise",
+    "size": "64x64",
+    "note": "Noise / signal-error icon. Flash it when a move is flipped by noise."
+  },
+  {
+    "file": "ui/icon-trophy.svg",
+    "category": "ui",
+    "id": "icon-trophy",
+    "size": "80x90",
+    "note": "Trophy for tournament winner."
+  },
+  {
+    "file": "ui/icon-extinct.svg",
+    "category": "ui",
+    "id": "icon-extinct",
+    "size": "48x48",
+    "note": "Marker for an eliminated strategy in the evolution mode."
+  },
+  {
+    "file": "ui/icon-arrow.svg",
+    "category": "ui",
+    "id": "icon-arrow",
+    "size": "64x32",
+    "note": "Arrow (flow between panels)."
+  },
+  {
+    "file": "ui/panel-frame.svg",
+    "category": "ui",
+    "id": "panel-frame",
+    "size": "400x300",
+    "note": "Generic paper panel frame (400x300). Scale with 9-slice or draw in code."
+  },
+  {
+    "file": "ui/panel-scoreboard.svg",
+    "category": "ui",
+    "id": "panel-scoreboard",
+    "size": "280x380",
+    "note": "Scoreboard panel (280x380)."
+  },
+  {
+    "file": "ui/leaderboard-row.svg",
+    "category": "ui",
+    "id": "leaderboard-row",
+    "size": "280x48",
+    "note": "Leaderboard row template: rank badge, name, score. Rebuild dynamically."
+  },
+  {
+    "file": "ui/round-counter.svg",
+    "category": "ui",
+    "id": "round-counter",
+    "size": "210x64",
+    "note": "Round counter badge template."
+  },
+  {
+    "file": "ui/progress-track.svg",
+    "category": "ui",
+    "id": "progress-track",
+    "size": "300x22",
+    "note": "Progress bar track + sample fill."
+  },
+  {
+    "file": "ui/bg-kraft-tile.svg",
+    "category": "ui",
+    "id": "bg-kraft-tile",
+    "size": "600x600",
+    "note": "Seamless-ish kraft paper background tile (600x600). Use as repeating CSS background."
+  },
+  {
+    "file": "ui/logo.svg",
+    "category": "ui",
+    "id": "logo",
+    "size": "560x150",
+    "note": "Title logo."
+  }
+]

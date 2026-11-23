@@ -1,0 +1,202 @@
+.lab {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 24px var(--gutter) 48px;
+  display: grid;
+  gap: 20px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: var(--t-2xl);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.panel {
+  display: grid;
+  gap: 18px;
+  position: sticky;
+  top: 80px;
+  padding: 18px;
+  background: var(--sheet);
+  border-radius: 24px;
+  box-shadow: 0 0 0 1px rgba(24, 32, 46, 0.07), 0 18px 40px -30px rgba(24, 32, 46, 0.4);
+}
+
+.main {
+  animation: labIn 0.45s var(--ease-out);
+  background: var(--sheet);
+  border-radius: 24px;
+  padding: clamp(16px, 2vw, 28px);
+  box-shadow: 0 0 0 1px var(--rule), 0 18px 40px -24px rgba(24, 32, 46, 0.35);
+  min-width: 0;
+}
+
+.select {
+  display: grid;
+  gap: 6px;
+  font-size: var(--t-sm);
+}
+
+.select > span {
+  color: var(--ink-2);
+  font-weight: 600;
+}
+
+.select small {
+  color: var(--ink-2);
+  font-size: var(--t-xs);
+  line-height: 1.35;
+}
+
+.selectRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.selectRow select,
+.seed input {
+  flex: 1;
+  min-height: 40px;
+  border-radius: 10px;
+  border: 1.5px solid var(--rule-strong);
+  background: var(--paper);
+  padding: 0 10px;
+  font-weight: 600;
+  min-width: 0;
+}
+
+.field {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.field legend {
+  font-size: var(--t-sm);
+  font-weight: 600;
+  color: var(--ink-2);
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.fieldGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px;
+}
+
+.fieldGrid button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1.5px solid transparent;
+  background: none;
+  border-radius: 10px;
+  padding: 2px 6px 2px 2px;
+  font-size: var(--t-xs);
+  font-weight: 600;
+  text-align: left;
+  color: var(--ink-3);
+  min-height: 40px;
+}
+
+.fieldGrid button:hover {
+  border-color: var(--rule-strong);
+}
+
+.fieldGrid .fieldOn {
+  color: var(--ink);
+  background: var(--gold-wash);
+}
+
+.seed {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.seed label {
+  display: grid;
+  gap: 6px;
+  flex: 1;
+  font-size: var(--t-sm);
+  color: var(--ink-2);
+  font-weight: 600;
+}
+
+.stack {
+  display: grid;
+  gap: 20px;
+}
+
+.insights {
+  margin: 0;
+  padding: 14px 18px 14px 34px;
+  border-left: 3px solid var(--gold);
+  background: var(--gold-wash);
+  border-radius: 0 var(--r-md) var(--r-md) 0;
+  font-family: var(--font-read);
+  font-size: 1.05rem;
+  display: grid;
+  gap: 4px;
+}
+
+.empty,
+.note {
+  color: var(--ink-2);
+  font-size: var(--t-sm);
+}
+
+.islandBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.islandBar > label {
+  min-width: 200px;
+  flex: 1;
+}
+
+.islandBar fieldset {
+  flex: 1 1 100%;
+}
+
+.islandBar .fieldGrid {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+@media (max-width: 900px) {
+  .body {
+    grid-template-columns: 1fr;
+  }
+  .panel {
+    position: static;
+  }
+}
+
+@keyframes labIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}

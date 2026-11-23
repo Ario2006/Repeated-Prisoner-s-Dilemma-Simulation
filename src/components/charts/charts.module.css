@@ -1,0 +1,164 @@
+.chart {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+
+.plot {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+.plot svg {
+  display: block;
+  overflow: visible;
+  touch-action: pan-y;
+}
+
+.legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  font-size: var(--t-sm);
+  color: var(--ink-2);
+}
+
+.legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.keyLine {
+  width: 16px;
+  height: 3px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.keyRef {
+  width: 16px;
+  height: 1.5px;
+  display: inline-block;
+  background: var(--ink-3) !important;
+}
+
+.keySwatch {
+  width: 11px;
+  height: 11px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.grid {
+  stroke: var(--rule);
+  stroke-width: 1;
+}
+
+.axis {
+  stroke: var(--rule-strong);
+  stroke-width: 1;
+}
+
+.tickY,
+.tickX {
+  font-size: 11px;
+  fill: var(--ink-3);
+}
+
+.tickY {
+  text-anchor: end;
+  dominant-baseline: middle;
+}
+
+.tickX {
+  text-anchor: middle;
+}
+
+.axisLabel {
+  font-size: 11px;
+  fill: var(--ink-2);
+  font-weight: 600;
+}
+
+.endLabel {
+  font-size: 12px;
+  font-weight: 700;
+  fill: var(--ink);
+  paint-order: stroke;
+  stroke: var(--sheet);
+  stroke-width: 4px;
+}
+
+.marker {
+  stroke: var(--ink-2);
+  stroke-width: 1;
+}
+
+.markerLabel {
+  font-size: 11px;
+  fill: var(--ink-2);
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: var(--sheet);
+  stroke-width: 3px;
+}
+
+.band {
+  fill: var(--gold-wash);
+  opacity: 0.6;
+}
+
+.bandLabel {
+  font-size: 11px;
+  font-weight: 600;
+  fill: var(--gold-deep);
+}
+
+.crosshair {
+  stroke: var(--ink);
+  stroke-width: 1;
+  opacity: 0.5;
+}
+
+.tooltip {
+  position: absolute;
+  top: 8px;
+  z-index: 3;
+  pointer-events: none;
+  background: var(--ink);
+  color: var(--sheet);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: var(--t-xs);
+  display: grid;
+  gap: 3px;
+  min-width: 140px;
+  box-shadow: 0 6px 18px rgba(24, 32, 46, 0.25);
+}
+
+.tooltip b {
+  font-size: var(--t-sm);
+}
+
+.tooltip span {
+  display: grid;
+  grid-template-columns: 10px 1fr auto;
+  align-items: center;
+  gap: 6px;
+}
+
+.tooltip i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.tooltip em {
+  font-style: normal;
+  font-weight: 700;
+}
